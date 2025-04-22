@@ -1,0 +1,344 @@
+/*   normalize   */
+* {
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+/*   header    */
+.header {
+    max-width: 1380px;
+    height: 60px;
+    margin: 3px auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;
+    border-radius: 20px;
+}
+.header_text {
+    color: white;
+}
+
+/*   product box   */
+
+.product_box_container {
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    padding: 10px;
+}
+.product_box {
+    width: 230px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    box-shadow: 6px 6px 10px aqua;
+}
+.product_box_img_container {
+    width: 200px;
+    height: 230px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.product_box_img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+
+}
+.product_box_info_container {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.add_box_container {
+    width: 100px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.product_box_p {
+    font-weight: bold;
+    font-size: 16px;
+}
+.product_box_input {
+    width: 40px;
+    height: 20px;
+}
+.product_box_input::-webkit-inner-spin-button,
+.product_box_input::-webkit-outer-spin-button {
+    opacity: 1;
+    display: block;
+}
+.product_box_input:focus {
+    outline: none;
+}
+.add_btn {
+    width: 50px;
+    height: 20px;
+    background-color: gold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.add_btn_span {
+    font-size: 13px;
+    font-weight: normal;
+
+}
+
+
+
+/*   shopping cart   */
+/*  intooo  */
+.shopping_cart_box_intro {
+    max-width: 100px;
+    height: 50px;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}
+.shopping_cart_box_intro i {
+    font-weight: bolder ;
+    font-size: 40px;
+}
+.shopping_cart_box_info {
+    max-width: 700px;
+    height: 70px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item {
+    width: 120px;
+    height: 30px;
+    border-bottom: 1px solid aqua;    
+    color: black;
+    font-weight: normal;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+}
+.price {
+    width: 110px;
+    height: 30px;
+    border-bottom: 1px solid aqua;
+    color: black;
+    font-weight: normal;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+}
+.quantity {
+    width: 90px;
+    height: 30px;
+    border-bottom: 1px solid aqua;
+    color: black;
+    font-weight: normal;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+}
+/*   main   */
+.shopping_cart_box {
+    max-width: 700px;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5px auto;
+}
+.added_product_div {
+    max-width: 700px;
+    min-width: 500px;
+
+    height: 120px;
+    margin: 10px auto;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 3px 2px 10px aqua;
+
+}
+
+.added_product_img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.added_product_img_div {
+    width: 80px;
+    height: 80px;
+
+}
+.added_product_info {
+    width: 110px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.aded_product_price_div {
+    width: 110px;
+    height: 40px;
+}
+.aded_product_price_div span {
+    color: black;
+    font-weight: normal;
+}
+.added_product_btns_container {
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+.added_product_btns_container  button {
+    width: 50px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+.added_product_btns_container input {
+    width: 40px;
+    height: 20px;
+}
+
+.added_product_btns_container input::-webkit-inner-spin-button,
+.added_product_btns_container input::-webkit-outer-spin-button {
+    opacity: 1;
+    display: block;
+}
+
+
+
+/*   pay box   */
+.pay_info_box {
+    width: 100px;
+    height: 50px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pay_info_box span {
+    font-weight: bold;
+    font-size: 35px;
+    font-style: italic;
+}
+/*  payyyyy main  */
+.show_final_price {
+    max-width: 700px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.pay_box {
+    max-width: 700px;
+    min-width: 500px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 3px 2px 10px aqua;
+    padding: 20px;
+}
+.pay_box_text {
+    color: black;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: italic;
+}
+.pay_price_box {
+    width: 100px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+
+}
+.post_pay_span {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 20px;
+}
+.products_pay_span {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 20px;
+}
+.pay_box_btn {
+    width: 130px;
+    height: 40px;
+    background-color: aqua;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*     animation     */
+.anination_div {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: aqua;
+    animation-name: anination_div;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+
+}
+.scroll_div {
+    height: 4px;
+    margin-top: 10px;
+    background-color: aqua;
+    position: fixed;
+    top: -9px;
+
+}
+
+
+@keyframes anination_div {
+    from {
+        transform: scale(0%);
+    }
+    to {
+        transform: scale(100%);
+    }
+}
